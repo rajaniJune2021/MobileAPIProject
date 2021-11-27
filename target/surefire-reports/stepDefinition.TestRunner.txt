@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: stepDefinition.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 23.668 s <<< FAILURE! - in stepDefinition.TestRunner
+| sonico.kris@aaa-calif.com | autoclub1 | 2020-10-15 | 6200041275393303 | 1978-10-27 | sonico.kris@aaa-calif.com | autoclub1 | 004 |.And validate response fields autoPolicyNumber as "<autoPolicyNumber>"  Time elapsed: 0.012 s  <<< FAILURE!
+java.lang.AssertionError: expected:<<autoPolicyNumber>> but was:<null>
+
+Examples: .| sonico.kris@aaa-calif.com | autoclub1 | 2020-10-15 | 6200041275393303 | 1978-10-27 | sonico.kris@aaa-calif.com | autoclub1 | 004 |  Time elapsed: 0.337 s  <<< FAILURE!
+java.lang.AssertionError: expected:<<autoPolicyNumber>> but was:<null>
+
+Examples: .| sonico.kris@aaa-calif.com | autoclub1 | 2020-10-15 | 6200041275393303 | 1978-10-27 | sonico.kris@aaa-calif.com | autoclub1 | 004 |  Time elapsed: 0.342 s  <<< FAILURE!
+java.lang.AssertionError: expected:<<autoPolicyNumber>> but was:<null>
+
+| "mobileapptest@aaa-calif.com | autoclub1 | 2020-10-15 | 1978-10-27 | sonico.kris@aaa-calif.com | autoclub1 | 004 |.And validate response fields memberNumber as "memberNumber>"  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.AssertionError: expected:<477492744> but was:<null>
+
+Examples: .| "mobileapptest@aaa-calif.com | autoclub1 | 2020-10-15 | 1978-10-27 | sonico.kris@aaa-calif.com | autoclub1 | 004 |  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: expected:<477492744> but was:<null>
+
+Examples: .| "mobileapptest@aaa-calif.com | autoclub1 | 2020-10-15 | 1978-10-27 | sonico.kris@aaa-calif.com | autoclub1 | 004 |  Time elapsed: 0.041 s  <<< FAILURE!
+java.lang.AssertionError: expected:<477492744> but was:<null>
+

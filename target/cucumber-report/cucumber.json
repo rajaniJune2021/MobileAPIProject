@@ -1,0 +1,670 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Launch Base API Url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10460559900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "set the base uri as \"https://apisuat.calif.aaa.com/ebiz/uat2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://apisuat.calif.aaa.com/ebiz/uat2",
+                  "offset": 21
+                }
+              ],
+              "location": "MobileAPIStepDefinition.set_the_base_uri_as(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Register User",
+        "description": "",
+        "id": ";register-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 604392900,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 8,
+                "value": "#    Given Set POST request Body Of Register User email as \"\u003cemail\u003e\" password as \"\u003cpassword\u003e\" memExpDate as \"\u003cmemExpDate\u003e\" memNumber as \"\u003cmemNumber\u003e\" and DOB as \"\u003cDOB\u003e\""
+              },
+              {
+                "line": 9,
+                "value": "#    And set request header \"X-IBM-Client-Id\" as \"832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2\""
+              },
+              {
+                "line": 10,
+                "value": "#    And set request header \"X-IBM-Client-Secret\" as \"jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ\""
+              },
+              {
+                "line": 11,
+                "value": "#    And set request header \"Content-Type\" as \"application/json\""
+              },
+              {
+                "line": 12,
+                "value": "#    When Submit POST Register user request \"/account\""
+              },
+              {
+                "line": 13,
+                "value": "#    And  validate response code as \"200\""
+              }
+            ],
+            "line": 14,
+            "name": "Set POST request body Of Login Member username as \"sonico.kris@aaa-calif.com\" password as \"autoclub1\" clubCode as \"004\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sonico.kris@aaa-calif.com",
+                  "offset": 51
+                },
+                {
+                  "val": "autoclub1",
+                  "offset": 91
+                },
+                {
+                  "val": "004",
+                  "offset": 115
+                }
+              ],
+              "location": "MobileAPIStepDefinition.set_post_request_body_of_login_member_username_as_password_as_club_code_as(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              5,
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 210744100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "set request header \"X-IBM-Client-Id\" as \"832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "X-IBM-Client-Id",
+                  "offset": 20
+                },
+                {
+                  "val": "832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2",
+                  "offset": 41
+                }
+              ],
+              "location": "requestHandler.set_request_header_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6272000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "set request header \"X-IBM-Client-Secret\" as \"jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "X-IBM-Client-Secret",
+                  "offset": 20
+                },
+                {
+                  "val": "jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ",
+                  "offset": 45
+                }
+              ],
+              "location": "requestHandler.set_request_header_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8405100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "set request header \"Content-Type\" as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 20
+                },
+                {
+                  "val": "application/json",
+                  "offset": 38
+                }
+              ],
+              "location": "requestHandler.set_request_header_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5903983100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Submit POST Login user request \"/user/session\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/user/session",
+                  "offset": 32
+                }
+              ],
+              "location": "MobileAPIStepDefinition.submit_post_login_user_request(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40340100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "validate response code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "responseHandler.validate_response_code_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 531344600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Validate response body accessToken as \"e\" customerId as \"000000000000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "e",
+                  "offset": 39
+                },
+                {
+                  "val": "000000000000000",
+                  "offset": 57
+                }
+              ],
+              "location": "MobileAPIStepDefinition.validate_response_body_access_token_as_customer_id_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1155700,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 21,
+                "value": "#    And set request header \"X-IBM-Client-Id\" as \"832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2\""
+              },
+              {
+                "line": 22,
+                "value": "#    And set request header \"X-IBM-Client-Secret\" as \"jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ\""
+              }
+            ],
+            "line": 23,
+            "name": "set request accessToken header \"Authorization\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Authorization",
+                  "offset": 32
+                }
+              ],
+              "location": "MobileAPIStepDefinition.set_request_access_token_header(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 697855500,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 24,
+                "value": "#    And Set GET List of Policies parameter clubCode as \"\u003cclubCode\u003e\" customerId as \"\u003ccustomerId\u003e\""
+              }
+            ],
+            "line": 25,
+            "name": "Submit GET list of policies \"/policies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/policies",
+                  "offset": 29
+                }
+              ],
+              "location": "MobileAPIStepDefinition.submit_get_list_of_policies(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 399000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "validate response code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "responseHandler.validate_response_code_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24621800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "validate response fields policyType as \"Auto\" policyNumber as \"CAA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Auto",
+                  "offset": 40
+                },
+                {
+                  "val": "CAA",
+                  "offset": 63
+                }
+              ],
+              "location": "MobileAPIStepDefinition.validate_response_fields_policy_type_as_policy_number_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 671868800,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 28,
+                "value": "#    And Set GET list of Auto policies parameter autopolicyNumber as \"\u003cautoPolicy\u003e\"  clubCode as \"\u003cclubCode\u003e\" customerId as \"\u003ccustomerId\u003e\""
+              },
+              {
+                "line": 29,
+                "value": "#    And set request accessToken header \"Authorization\""
+              }
+            ],
+            "line": 30,
+            "name": "Submit GET list of auto policies \"/autopolicy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/autopolicy",
+                  "offset": 34
+                }
+              ],
+              "location": "MobileAPIStepDefinition.submit_get_list_of_auto_policies(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "validate response code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "responseHandler.validate_response_code_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88037800,
+              "error_message": "java.lang.AssertionError: expected:\u003c\u003cautoPolicyNumber\u003e\u003e but was:\u003cnull\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinition.MobileAPIStepDefinition.validate_response_fields_auto_policy_number_as(MobileAPIStepDefinition.java:227)\r\n\tat ✽.And validate response fields autoPolicyNumber as \"\u003cautoPolicyNumber\u003e\"(MobileAPI.feature:32)\r\n",
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "validate response fields autoPolicyNumber as \"\u003cautoPolicyNumber\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cautoPolicyNumber\u003e",
+                  "offset": 46
+                }
+              ],
+              "location": "MobileAPIStepDefinition.validate_response_fields_auto_policy_number_as(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Launch Base API Url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1380200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "set the base uri as \"https://apisuat.calif.aaa.com/ebiz/uat2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://apisuat.calif.aaa.com/ebiz/uat2",
+                  "offset": 21
+                }
+              ],
+              "location": "MobileAPIStepDefinition.set_the_base_uri_as(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Get Membership Details",
+        "description": "",
+        "id": ";get-membership-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2433500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Set POST request body Of Login Member username as \"sonico.kris@aaa-calif.com\" password as \"autoclub1\" clubCode as \"004\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sonico.kris@aaa-calif.com",
+                  "offset": 51
+                },
+                {
+                  "val": "autoclub1",
+                  "offset": 91
+                },
+                {
+                  "val": "004",
+                  "offset": 115
+                }
+              ],
+              "location": "MobileAPIStepDefinition.set_post_request_body_of_login_member_username_as_password_as_club_code_as(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              4,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1068600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "set request header \"X-IBM-Client-Id\" as \"832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "X-IBM-Client-Id",
+                  "offset": 20
+                },
+                {
+                  "val": "832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2",
+                  "offset": 41
+                }
+              ],
+              "location": "requestHandler.set_request_header_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32261700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "set request header \"X-IBM-Client-Secret\" as \"jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "X-IBM-Client-Secret",
+                  "offset": 20
+                },
+                {
+                  "val": "jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ",
+                  "offset": 45
+                }
+              ],
+              "location": "requestHandler.set_request_header_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1962400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "set request header \"Content-Type\" as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Content-Type",
+                  "offset": 20
+                },
+                {
+                  "val": "application/json",
+                  "offset": 38
+                }
+              ],
+              "location": "requestHandler.set_request_header_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1964844500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Submit POST Login user request \"/user/session\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/user/session",
+                  "offset": 32
+                }
+              ],
+              "location": "MobileAPIStepDefinition.submit_post_login_user_request(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309200,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "validate response code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "responseHandler.validate_response_code_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4846700,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Validate response body accessToken as \"e\" customerId as \"000000000000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "e",
+                  "offset": 39
+                },
+                {
+                  "val": "000000000000000",
+                  "offset": 57
+                }
+              ],
+              "location": "MobileAPIStepDefinition.validate_response_body_access_token_as_customer_id_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5612900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Validate response body memberNumber as \"0000000000000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0000000000000000",
+                  "offset": 40
+                }
+              ],
+              "location": "MobileAPIStepDefinition.validate_response_body_member_number_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 909900,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "set request accessToken header \"Authorization\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Authorization",
+                  "offset": 32
+                }
+              ],
+              "location": "MobileAPIStepDefinition.set_request_access_token_header(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 687806600,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Submit Get list of membershipDetails \"/membership/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/membership/",
+                  "offset": 38
+                }
+              ],
+              "location": "MobileAPIStepDefinition.submit_get_list_of_membership_details(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 284100,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "validate response code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "responseHandler.validate_response_code_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120294300,
+              "error_message": "java.lang.AssertionError: expected:\u003c477492744\u003e but was:\u003cnull\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinition.MobileAPIStepDefinition.validate_response_fields_member_number_as(MobileAPIStepDefinition.java:147)\r\n\tat ✽.And validate response fields memberNumber as \"memberNumber\u003e\"(MobileAPI.feature:53)\r\n",
+              "status": "failed"
+            },
+            "line": 53,
+            "name": "validate response fields memberNumber as \"memberNumber\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "memberNumber\u003e",
+                  "offset": 42
+                }
+              ],
+              "location": "MobileAPIStepDefinition.validate_response_fields_member_number_as(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "MobileAPI.feature"
+  }
+]

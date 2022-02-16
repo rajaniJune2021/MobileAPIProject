@@ -165,7 +165,7 @@ public class MobileAPIStepDefinition {
         map.put("customerId", customerId );
         System.out.println(map);
         System.out.println("accessToken value after resetting to null  " + accessToken);
-     //  response = requestSpecification.given().header("X-IBM-Client-Id","832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2").header("X-IBM-Client-Secret","jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ").header("authorizationHeader","Bearer "+accessToken).queryParams(map).body("").get(getUrl).then().extract().response();
+    
        requestSpecification.given().queryParams(map).body("");
         response = requestSpecification.when().get(getUrl).then().extract().response();
         System.out.println("get policies response code " + response.statusCode());
@@ -210,7 +210,7 @@ public class MobileAPIStepDefinition {
     @And("^Submit GET list of auto policies \"([^\"]*)\"$")
     public void submit_get_list_of_auto_policies(String getAutoPolicyUrl) {
       //  System.out.println("printing access token afeter get of list of policies api trigger"+ accessToken);
-        response =  requestSpecification.when().get(getAutoPolicyUrl+"/CAA026395927").then().extract().response();
+        response =  requestSpecification.when().get(getAutoPolicyUrl+"/policyNumber").then().extract().response();
         // System.out.println(RestAssured.baseURI+":"+RestAssured.port+RestAssured.basePath);
         System.out.println("get autopolicies response is:"+response.asString());
     }
